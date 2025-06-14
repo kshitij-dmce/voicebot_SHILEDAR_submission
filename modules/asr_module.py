@@ -3,7 +3,7 @@ import os
 import base64
 import queue
 import threading
-from flask import Flask, request
+from voicebot_SHILEDAR_submission.server import Flask, request
 from flask_cors import CORS
 from flask_socketio import SocketIO
 from google.cloud import speech

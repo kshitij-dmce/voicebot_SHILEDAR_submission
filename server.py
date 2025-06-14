@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from voicebot_SHILEDAR_submission.server import Flask, request, jsonify
 import torch
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
