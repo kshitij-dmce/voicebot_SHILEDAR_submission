@@ -1,0 +1,39 @@
+2025-06-14 16:08:56,396 - INFO - Setting up models and connections...
+2025-06-14 16:08:56,397 - INFO - Using device: cpu
+2025-06-14 16:08:56,400 - INFO - Use pytorch device_name: cpu
+2025-06-14 16:08:56,401 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-14 16:09:00,652 - INFO - Embedding model loaded successfully
+2025-06-14 16:09:02,648 - INFO - HTTP Request: GET https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-14 16:09:03,402 - INFO - HTTP Request: GET https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs "HTTP/1.1 200 OK"
+2025-06-14 16:09:03,406 - INFO - Connected to Qdrant collection: Lenden_ faqs
+2025-06-14 16:09:03,408 - INFO - Collection size: 25001 points
+2025-06-14 16:09:03,409 - INFO - Gemini model initialized successfully
+2025-06-14 16:09:03,410 - INFO - Starting to process CSV: test_questions.csv
+2025-06-14 16:09:03,418 - ERROR - Error processing CSV file: Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+
+2025-06-14 16:09:03,419 - ERROR - Unhandled exception in main:
+Traceback (most recent call last):
+  File "C:\Users\Kshitij Sharma\Python\VoxGenie\voicebot_SHILEDAR_submission\run_inference.py", line 503, in main
+    system.process_csv(args.input, args.output)
+  File "C:\Users\Kshitij Sharma\Python\VoxGenie\voicebot_SHILEDAR_submission\run_inference.py", line 410, in process_csv
+    df = pd.read_csv(input_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kshitij Sharma\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kshitij Sharma\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kshitij Sharma\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kshitij Sharma\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+

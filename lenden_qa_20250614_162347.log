@@ -1,0 +1,608 @@
+2025-06-14 16:23:47,994 - INFO - Setting up models and connections...
+2025-06-14 16:23:47,995 - INFO - Using device: cpu
+2025-06-14 16:23:47,997 - INFO - Use pytorch device_name: cpu
+2025-06-14 16:23:47,998 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-14 16:23:53,689 - INFO - Embedding model loaded successfully
+2025-06-14 16:23:55,989 - INFO - HTTP Request: GET https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-14 16:23:56,861 - INFO - HTTP Request: GET https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs "HTTP/1.1 200 OK"
+2025-06-14 16:23:56,864 - INFO - Connected to Qdrant collection: Lenden_ faqs
+2025-06-14 16:23:56,867 - INFO - Collection size: 25001 points
+2025-06-14 16:23:56,867 - INFO - Gemini model initialized successfully
+2025-06-14 16:23:56,868 - INFO - Starting to process CSV: test_questions.csv
+2025-06-14 16:23:56,886 - INFO - Loaded CSV with 108 rows and columns: sawal
+2025-06-14 16:23:56,901 - INFO - Identified question column by content analysis: sawal
+2025-06-14 16:23:56,902 - INFO - Using 'sawal' as the question column
+2025-06-14 16:23:56,906 - INFO - Processing question 1/108: How do I update my address and also change my regi...
+2025-06-14 16:23:57,783 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:23:57,784 - INFO - Processing sub-query: How do I update my address?
+2025-06-14 16:23:58,237 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:23:58,240 - INFO - Processing sub-query: How do I change my registered mobile number?
+2025-06-14 16:23:58,520 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:01,801 - INFO - Processing question 2/108: Is my money safe in your bank and what security me...
+2025-06-14 16:24:02,596 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:02,596 - INFO - Processing sub-query: Is my money safe in your bank?
+2025-06-14 16:24:02,902 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:02,903 - INFO - Processing sub-query: What security measures do you have in place?
+2025-06-14 16:24:03,312 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:07,335 - INFO - Processing question 3/108: What are the interest rates for fixed deposits and...
+2025-06-14 16:24:08,126 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:08,126 - INFO - Processing sub-query: What are the interest rates for fixed deposits?
+2025-06-14 16:24:08,432 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:08,434 - INFO - Processing sub-query: How do fixed deposit interest rates compare with recurring deposit interest rates?
+2025-06-14 16:24:08,740 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:11,813 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:11,814 - INFO - Processing sub-query: How to block my account?
+2025-06-14 16:24:12,119 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:12,121 - INFO - Processing sub-query: How to apply for a new debit card?
+2025-06-14 16:24:12,427 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:15,641 - INFO - Processing question 5/108: Can you help me understand the difference between ...
+2025-06-14 16:24:16,507 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:16,507 - INFO - Processing sub-query: What is the difference between a savings account and a current account?
+2025-06-14 16:24:16,829 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:16,830 - INFO - Processing sub-query: Which account is better for a small business?
+2025-06-14 16:24:17,136 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:20,363 - INFO - Processing question 6/108: How do I apply for a home loan and what documents ...
+2025-06-14 16:24:21,029 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:21,029 - INFO - Processing sub-query: How do I apply for a home loan?
+2025-06-14 16:24:21,304 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:21,305 - INFO - Processing sub-query: What documents will I need for a home loan application?
+2025-06-14 16:24:21,643 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:25,233 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:24:25,234 - INFO - Processing sub-query: How to reset password with a changed phone number?
+2025-06-14 16:24:25,606 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:29,432 - INFO - Processing question 8/108: I'm moving abroad next month, how do I maintain my...
+2025-06-14 16:24:30,245 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:30,245 - INFO - Processing sub-query: How do I maintain my account?
+2025-06-14 16:24:30,535 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:30,536 - INFO - Processing sub-query: Can I use my debit card internationally?
+2025-06-14 16:24:30,863 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:33,879 - INFO - Processing question 9/108: What are the charges for IMPS, NEFT, and RTGS tran...
+2025-06-14 16:24:34,503 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:34,503 - INFO - Processing sub-query: What are the charges for IMPS, NEFT, and RTGS transfers?
+2025-06-14 16:24:34,852 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:34,853 - INFO - Processing sub-query: Which one is faster?
+2025-06-14 16:24:35,160 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:39,563 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:39,977 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:40,285 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:42,951 - INFO - Progress saved to inference_output.csv (10/108 complete)
+2025-06-14 16:24:42,952 - INFO - Processing question 11/108: How do I link my PAN card with my account and is i...
+2025-06-14 16:24:43,663 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:43,664 - INFO - Processing sub-query: How do I link my PAN card with my account?
+2025-06-14 16:24:43,942 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:43,944 - INFO - Processing sub-query: Is it mandatory for all transactions?
+2025-06-14 16:24:44,228 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:47,527 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:24:47,843 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:47,845 - INFO - Processing sub-query: What are the returns of fixed deposits?
+2025-06-14 16:24:48,102 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:48,104 - INFO - Processing sub-query: What are the returns of mutual funds?
+2025-06-14 16:24:48,379 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:52,764 - INFO - Processing question 13/108: Why was my credit card declined yesterday and how ...
+2025-06-14 16:24:53,491 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:53,492 - INFO - Processing sub-query: Why was my credit card declined yesterday?
+2025-06-14 16:24:54,517 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:54,518 - INFO - Processing sub-query: How do I increase my credit limit?
+2025-06-14 16:24:54,816 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:59,223 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:24:59,223 - INFO - Processing sub-query: How to open an account for my child?
+2025-06-14 16:24:59,534 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:24:59,537 - INFO - Processing sub-query: How to get a bank statement for scholarship purposes?
+2025-06-14 16:24:59,837 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:03,574 - INFO - Processing question 15/108: Can I access my old statements from 2022 and also ...
+2025-06-14 16:25:04,228 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:04,230 - INFO - Processing sub-query: Can I access my old statements from 2022?
+2025-06-14 16:25:04,650 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:04,651 - INFO - Processing sub-query: Can I set up automatic bill payments for utilities?
+2025-06-14 16:25:05,059 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:08,995 - INFO - Processing question 16/108: What is the minimum balance requirement for premiu...
+2025-06-14 16:25:09,647 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:09,647 - INFO - Processing sub-query: What is the minimum balance requirement for a premium account?
+2025-06-14 16:25:09,976 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:09,977 - INFO - Processing sub-query: What additional benefits will I get with a premium account?
+2025-06-14 16:25:10,386 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:14,529 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:14,530 - INFO - Processing sub-query: Why are my UPI payments failing?
+2025-06-14 16:25:14,891 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:14,893 - INFO - Processing sub-query: Why is my mobile banking app not opening?
+2025-06-14 16:25:15,217 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:19,375 - INFO - Processing question 18/108: How do I report a suspicious transaction and how l...
+2025-06-14 16:25:20,010 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:20,011 - INFO - Processing sub-query: How do I report a suspicious transaction?
+2025-06-14 16:25:20,318 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:20,320 - INFO - Processing sub-query: How long does it take to get my money back?
+2025-06-14 16:25:20,624 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:24,616 - INFO - Processing question 19/108: My salary account shows incorrect balance and I al...
+2025-06-14 16:25:25,302 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:25:25,303 - INFO - Processing sub-query: Why is my salary account balance incorrect?
+2025-06-14 16:25:25,613 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:25,616 - INFO - Processing sub-query: Why can't I access net banking?
+2025-06-14 16:25:25,940 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:25,941 - INFO - Processing sub-query: What should I do to resolve these issues?
+2025-06-14 16:25:26,258 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:31,176 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:31,176 - INFO - Processing sub-query: What loan amount can be obtained?
+2025-06-14 16:25:31,480 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:31,481 - INFO - Processing sub-query: How will the EMI be calculated for a 20 lakh home loan?
+2025-06-14 16:25:31,894 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:36,399 - INFO - Progress saved to inference_output.csv (20/108 complete)
+2025-06-14 16:25:36,400 - INFO - Processing question 21/108: How do I update my KYC and can I do it online with...
+2025-06-14 16:25:37,010 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:37,010 - INFO - Processing sub-query: How do I update my KYC?
+2025-06-14 16:25:38,138 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:38,139 - INFO - Processing sub-query: Can I do it online?
+2025-06-14 16:25:38,546 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:41,985 - INFO - Processing question 22/108: What's the difference between credit card and debi...
+2025-06-14 16:25:42,745 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:42,745 - INFO - Processing sub-query: What's the difference between a credit card and a debit card?
+2025-06-14 16:25:43,055 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:43,057 - INFO - Processing sub-query: Which one should I use for online shopping?
+2025-06-14 16:25:43,358 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:46,915 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:25:47,257 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:47,541 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:47,837 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:52,348 - INFO - Processing question 24/108: I'm unable to login to the app - it says 'invalid ...
+2025-06-14 16:25:52,964 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:52,964 - INFO - Processing sub-query: Why is my app login showing "invalid credentials"?
+2025-06-14 16:25:53,905 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:53,907 - INFO - Processing sub-query: How do I reset my MPIN?
+2025-06-14 16:25:54,319 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:57,719 - INFO - Processing question 25/108: Can I have joint account with my wife and how will...
+2025-06-14 16:25:58,412 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:25:58,413 - INFO - Processing sub-query: Can I have a joint account with my wife?
+2025-06-14 16:25:58,719 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:25:58,721 - INFO - Processing sub-query: How will the nomination process work if something happens to either of us?
+2025-06-14 16:25:59,127 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:02,613 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:26:02,614 - INFO - Processing sub-query: UPI transaction failed to reach receiver.
+2025-06-14 16:26:02,921 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:02,922 - INFO - Processing sub-query: Money deducted from sender's account.
+2025-06-14 16:26:03,227 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:03,229 - INFO - Processing sub-query: What to do?
+2025-06-14 16:26:03,534 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:06,837 - INFO - Processing question 27/108: How do I apply for a credit card and what's the el...
+2025-06-14 16:26:07,530 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:26:07,531 - INFO - Processing sub-query: How do I apply for a credit card?
+2025-06-14 16:26:07,832 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:07,833 - INFO - Processing sub-query: What's the eligibility criteria?
+2025-06-14 16:26:08,208 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:08,209 - INFO - Processing sub-query: What are the annual charges?
+2025-06-14 16:26:08,547 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:13,074 - INFO - Processing question 28/108: My debit card is expiring next month and I also wa...
+2025-06-14 16:26:13,772 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:13,773 - INFO - Processing sub-query: How to proceed with an expiring debit card?
+2025-06-14 16:26:14,662 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:14,663 - INFO - Processing sub-query: How to change my registered email ID?
+2025-06-14 16:26:15,001 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:19,202 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:19,203 - INFO - Processing sub-query: Can I set up auto-debit for my loan EMI?
+2025-06-14 16:26:19,610 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:19,611 - INFO - Processing sub-query: Can I receive my statement via email monthly?
+2025-06-14 16:26:20,017 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:23,645 - INFO - Processing question 30/108: I need to transfer large amount to my son studying...
+2025-06-14 16:26:24,309 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:24,310 - INFO - Processing sub-query: How to transfer a large amount of money abroad?
+2025-06-14 16:26:24,625 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:24,627 - INFO - Processing sub-query: How to obtain a tax certificate for the last year?
+2025-06-14 16:26:25,039 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:29,603 - INFO - Progress saved to inference_output.csv (30/108 complete)
+2025-06-14 16:26:29,604 - INFO - Processing question 31/108: What is the cheque clearing time and can I stop pa...
+2025-06-14 16:26:30,261 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:30,261 - INFO - Processing sub-query: What is the cheque clearing time?
+2025-06-14 16:26:31,140 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:31,142 - INFO - Processing sub-query: Can I stop payment on a cheque I issued yesterday?
+2025-06-14 16:26:31,490 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:34,914 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:26:34,915 - INFO - Processing sub-query: What are the options for FD renewal at a higher interest rate?
+2025-06-14 16:26:35,204 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:39,151 - INFO - Processing question 33/108: Can I operate my account from abroad and what fore...
+2025-06-14 16:26:39,735 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:39,735 - INFO - Processing sub-query: Can I operate my account from abroad?
+2025-06-14 16:26:40,084 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:40,086 - INFO - Processing sub-query: What forex charges apply for international transactions?
+2025-06-14 16:26:40,503 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:44,228 - INFO - Processing question 34/108: My account is showing unauthorized transactions an...
+2025-06-14 16:26:44,845 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:44,846 - INFO - Processing sub-query: How to block my card?
+2025-06-14 16:26:45,143 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:45,145 - INFO - Processing sub-query: What is the fastest way to block my card?
+2025-06-14 16:26:45,431 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:49,305 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:49,306 - INFO - Processing sub-query: How to link GPA and Aadhaar to a bank account?
+2025-06-14 16:26:49,612 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:49,614 - INFO - Processing sub-query: Is linking GPA and Aadhaar to a bank account safe?
+2025-06-14 16:26:49,917 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:53,267 - INFO - Processing question 36/108: How do I set up standing instructions for my home ...
+2025-06-14 16:26:53,912 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:53,913 - INFO - Processing sub-query: How to set up standing instructions for home loan EMI
+2025-06-14 16:26:54,198 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:54,199 - INFO - Processing sub-query: How to update income details
+2025-06-14 16:26:54,527 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:58,731 - INFO - Processing question 37/108: What's the difference between internet banking and...
+2025-06-14 16:26:59,442 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:26:59,442 - INFO - Processing sub-query: What's the difference between internet banking and mobile banking?
+2025-06-14 16:26:59,754 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:26:59,756 - INFO - Processing sub-query: Which one is more secure?
+2025-06-14 16:27:00,056 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:04,156 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:04,157 - INFO - Processing sub-query: What will be the impact on my credit score if I miss an EMI?
+2025-06-14 16:27:04,464 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:04,466 - INFO - Processing sub-query: How can I check my credit score?
+2025-06-14 16:27:04,860 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:08,687 - INFO - Processing question 39/108: I want to nominate my son for my account and also ...
+2025-06-14 16:27:09,334 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:09,334 - INFO - Processing sub-query: Nominate my son for my account
+2025-06-14 16:27:09,638 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:09,641 - INFO - Processing sub-query: Inquire about locker facility at my nearest branch
+2025-06-14 16:27:09,992 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:12,345 - INFO - Processing question 40/108: When will my debit card arrive and how do I activa...
+2025-06-14 16:27:12,959 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:12,960 - INFO - Processing sub-query: When will my debit card arrive?
+2025-06-14 16:27:13,253 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:13,254 - INFO - Processing sub-query: How do I activate my debit card?
+2025-06-14 16:27:13,574 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:16,556 - INFO - Progress saved to inference_output.csv (40/108 complete)
+2025-06-14 16:27:17,465 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:17,466 - INFO - Processing sub-query: Can I invest in mutual funds from my account?
+2025-06-14 16:27:17,767 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:17,769 - INFO - Processing sub-query: Can I manage both from the same app?
+2025-06-14 16:27:18,079 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:21,737 - INFO - Processing question 42/108: How do I book a fixed deposit through mobile app a...
+2025-06-14 16:27:22,515 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:22,516 - INFO - Processing sub-query: How to book a fixed deposit through a mobile app
+2025-06-14 16:27:22,801 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:22,802 - INFO - Processing sub-query: What are the current interest rates for senior citizens for fixed deposits
+2025-06-14 16:27:23,096 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:26,158 - INFO - Processing question 43/108: My account is showing dormant status but I've been...
+2025-06-14 16:27:26,808 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:26,808 - INFO - Processing sub-query: Why is my account showing dormant status?
+2025-06-14 16:27:27,097 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:27,098 - INFO - Processing sub-query: Why can't I see last month's transactions?
+2025-06-14 16:27:27,398 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:32,418 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:27:33,341 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:36,679 - INFO - Processing question 45/108: What are the documents required for business loan ...
+2025-06-14 16:27:38,276 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:38,277 - INFO - Processing sub-query: What are the documents required for a business loan?
+2025-06-14 16:27:38,561 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:38,562 - INFO - Processing sub-query: How long is the loan approval process?
+2025-06-14 16:27:38,872 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:42,575 - INFO - Processing question 46/108: Can I convert my regular savings account to salary...
+2025-06-14 16:27:43,213 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:27:43,214 - INFO - Processing sub-query: Can I convert my regular savings account to a salary account?
+2025-06-14 16:27:43,581 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:43,582 - INFO - Processing sub-query: What benefits will I get?
+2025-06-14 16:27:43,888 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:47,467 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:27:47,743 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:51,433 - INFO - Processing question 48/108: How do I apply for a locker and what's the annual ...
+2025-06-14 16:27:52,287 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:27:52,287 - INFO - Processing sub-query: How do I apply for a locker?
+2025-06-14 16:27:52,558 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:52,559 - INFO - Processing sub-query: What is the annual rent?
+2025-06-14 16:27:52,821 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:52,823 - INFO - Processing sub-query: What is the security deposit requirement?
+2025-06-14 16:27:53,104 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:27:56,567 - INFO - Processing question 49/108: My credit score has dropped recently and I also ne...
+2025-06-14 16:27:57,299 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:27:57,300 - INFO - Processing sub-query: What will the recent drop in my credit score do to my car loan application?
+2025-06-14 16:27:57,573 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:01,807 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:28:01,808 - INFO - Processing sub-query: What is the status of my debit card replacement request?
+2025-06-14 16:28:02,111 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:05,147 - INFO - Progress saved to inference_output.csv (50/108 complete)
+2025-06-14 16:28:05,148 - INFO - Processing question 51/108: I want to open an account for my minor daughter an...
+2025-06-14 16:28:05,804 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:05,805 - INFO - Processing sub-query: Open an account for a minor
+2025-06-14 16:28:06,105 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:06,107 - INFO - Processing sub-query: Set up a recurring deposit
+2025-06-14 16:28:06,423 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:10,341 - INFO - Processing question 52/108: What happens to my account if there's no activity ...
+2025-06-14 16:28:10,987 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:10,987 - INFO - Processing sub-query: What happens to my account if there's no activity for 2 years?
+2025-06-14 16:28:11,285 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:11,287 - INFO - Processing sub-query: How do I reactivate it?
+2025-06-14 16:28:11,635 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:16,860 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:16,860 - INFO - Processing sub-query: Can I have more than one savings account?
+2025-06-14 16:28:17,779 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:17,780 - INFO - Processing sub-query: Will different charges apply to both accounts?
+2025-06-14 16:28:18,068 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:22,507 - INFO - Processing question 54/108: How do I register a complaint about poor service a...
+2025-06-14 16:28:23,412 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:23,413 - INFO - Processing sub-query: How do I register a complaint about poor service?
+2025-06-14 16:28:24,333 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:24,334 - INFO - Processing sub-query: How do I request an account statement?
+2025-06-14 16:28:24,625 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:28,982 - INFO - Processing question 55/108: My employer is asking for bank account details for...
+2025-06-14 16:28:29,658 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:28:29,659 - INFO - Processing sub-query: What bank account details are safe to share with an employer for salary payment?
+2025-06-14 16:28:30,580 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:34,371 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:28:34,372 - INFO - Processing sub-query: How can I enable international transactions on my ATM card before my trip next week?
+2025-06-14 16:28:34,676 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:37,902 - INFO - Processing question 57/108: I've lost my phone with banking app and I'm worrie...
+2025-06-14 16:28:38,417 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:28:38,418 - INFO - Processing sub-query: What immediate steps should I take?
+2025-06-14 16:28:38,713 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:41,724 - INFO - Processing question 58/108: What are the charges for demand draft and can I ca...
+2025-06-14 16:28:42,457 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:42,458 - INFO - Processing sub-query: What are the charges for demand draft?
+2025-06-14 16:28:42,867 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:42,868 - INFO - Processing sub-query: Can I cancel a demand draft if the payment is no longer required?
+2025-06-14 16:28:43,181 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:47,234 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:28:47,533 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:51,403 - INFO - Processing question 60/108: Can I get a loan against my fixed deposit and what...
+2025-06-14 16:28:52,189 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:52,189 - INFO - Processing sub-query: Can I get a loan against my fixed deposit?
+2025-06-14 16:28:52,577 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:52,579 - INFO - Processing sub-query: What will be the interest rate compared to a personal loan?
+2025-06-14 16:28:52,902 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:56,106 - INFO - Progress saved to inference_output.csv (60/108 complete)
+2025-06-14 16:28:56,106 - INFO - Processing question 61/108: How do I update my signature in your records and a...
+2025-06-14 16:28:56,794 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:28:56,795 - INFO - Processing sub-query: How do I update my signature?
+2025-06-14 16:28:57,203 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:28:57,204 - INFO - Processing sub-query: How do I order a new cheque book?
+2025-06-14 16:28:57,618 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:02,326 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:02,326 - INFO - Processing sub-query: How to pay GST from my account?
+2025-06-14 16:29:02,630 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:02,631 - INFO - Processing sub-query: Is it better to have a separate account for business expenses?
+2025-06-14 16:29:02,937 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:06,680 - INFO - Processing question 63/108: I received an SMS saying my account is blocked due...
+2025-06-14 16:29:07,550 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:07,551 - INFO - Processing sub-query: Is this an authentic SMS message from the account provider?
+2025-06-14 16:29:07,956 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:07,958 - INFO - Processing sub-query: Was my KYC information actually updated last month?
+2025-06-14 16:29:08,261 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:12,187 - INFO - Processing question 64/108: What are the benefits of net banking compared to m...
+2025-06-14 16:29:13,385 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:13,385 - INFO - Processing sub-query: What are the benefits of net banking compared to mobile banking?
+2025-06-14 16:29:14,420 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:14,422 - INFO - Processing sub-query: Why can't I see all features in both net banking and mobile banking?
+2025-06-14 16:29:14,714 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:19,097 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:19,098 - INFO - Processing sub-query: Can I apply again?
+2025-06-14 16:29:19,428 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:19,429 - INFO - Processing sub-query: What are the chances of approval?
+2025-06-14 16:29:19,835 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:24,495 - INFO - Processing question 66/108: How do I generate a mini statement at ATM and is t...
+2025-06-14 16:29:25,212 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:25,212 - INFO - Processing sub-query: How do I generate a mini statement at an ATM?
+2025-06-14 16:29:26,187 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:26,189 - INFO - Processing sub-query: Is there a limit to the number of transactions shown on a mini statement?
+2025-06-14 16:29:26,503 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:29,106 - INFO - Processing question 67/108: My debit card doesn't work for international websi...
+2025-06-14 16:29:29,768 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:29,769 - INFO - Processing sub-query: Why doesn't my debit card work for international websites?
+2025-06-14 16:29:30,074 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:30,076 - INFO - Processing sub-query: How can I increase my online transaction limit?
+2025-06-14 16:29:30,381 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:35,538 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:35,538 - INFO - Processing sub-query: How to generate a new FD certificate?
+2025-06-14 16:29:36,631 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:36,633 - INFO - Processing sub-query: Is a branch visit necessary for this?
+2025-06-14 16:29:37,038 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:40,135 - INFO - Processing question 69/108: I need to submit bank statements for visa applicat...
+2025-06-14 16:29:40,987 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:29:40,988 - INFO - Processing sub-query: Can I submit bank statements for a visa application at a bank branch?
+2025-06-14 16:29:41,290 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:41,292 - INFO - Processing sub-query: Can I get signature verification done at a bank branch?
+2025-06-14 16:29:41,611 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:41,613 - INFO - Processing sub-query: Can I do both bank statement submission and signature verification at the same branch in one visit?
+2025-06-14 16:29:41,906 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:45,240 - INFO - Processing question 70/108: What is the daily transaction limit on UPI and can...
+2025-06-14 16:29:45,834 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:45,834 - INFO - Processing sub-query: What is the daily transaction limit on UPI?
+2025-06-14 16:29:46,161 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:46,164 - INFO - Processing sub-query: Can the daily UPI transaction limit be increased temporarily?
+2025-06-14 16:29:46,462 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:49,789 - INFO - Progress saved to inference_output.csv (70/108 complete)
+2025-06-14 16:29:50,362 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:29:50,363 - INFO - Processing sub-query: How to receive OTP after changing phone number and email?
+2025-06-14 16:29:50,658 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:54,890 - INFO - Processing question 72/108: Can I deposit cash in my account through cash depo...
+2025-06-14 16:29:55,749 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:29:55,749 - INFO - Processing sub-query: Can I deposit cash in my account through a cash deposit machine?
+2025-06-14 16:29:56,676 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:29:56,677 - INFO - Processing sub-query: Are there any charges for cash deposits?
+2025-06-14 16:29:56,959 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:00,634 - INFO - Processing question 73/108: How do I redeem my credit card reward points and h...
+2025-06-14 16:30:01,308 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:01,309 - INFO - Processing sub-query: How do I redeem my credit card reward points?
+2025-06-14 16:30:01,617 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:01,618 - INFO - Processing sub-query: How long are my credit card reward points valid?
+2025-06-14 16:30:01,923 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:04,688 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:04,688 - INFO - Processing sub-query: Why hasn't the subsidy amount been credited to my account?
+2025-06-14 16:30:04,995 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:04,996 - INFO - Processing sub-query: What could be the problem?
+2025-06-14 16:30:05,302 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:09,405 - INFO - Processing question 75/108: I need to send money urgently to my relative in an...
+2025-06-14 16:30:10,013 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:30:10,014 - INFO - Processing sub-query: What's the fastest way to transfer money?
+2025-06-14 16:30:10,326 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:14,310 - INFO - Processing question 76/108: Why am I charged annual maintenance fee despite ma...
+2025-06-14 16:30:14,945 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:14,946 - INFO - Processing sub-query: Why am I charged an annual maintenance fee?
+2025-06-14 16:30:15,233 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:15,234 - INFO - Processing sub-query: Can the annual maintenance fee be reversed?
+2025-06-14 16:30:15,513 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:20,150 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:20,150 - INFO - Processing sub-query: How do I migrate my banking app to my new mobile phone?
+2025-06-14 16:30:20,455 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:20,457 - INFO - Processing sub-query: Will all my information be saved?
+2025-06-14 16:30:20,760 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:24,381 - INFO - Processing question 78/108: How do I link my account with income tax portal fo...
+2025-06-14 16:30:25,185 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:25,185 - INFO - Processing sub-query: How do I link my account with the income tax portal?
+2025-06-14 16:30:25,477 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:25,479 - INFO - Processing sub-query: How do I download Form 26AS?
+2025-06-14 16:30:25,783 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:29,177 - INFO - Processing question 79/108: My CIBIL score is low but I need a personal loan u...
+2025-06-14 16:30:29,778 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:30:29,779 - INFO - Processing sub-query: Will you approve my personal loan application?
+2025-06-14 16:30:30,086 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:34,178 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:34,178 - INFO - Processing sub-query: How to dispute a credit card bill?
+2025-06-14 16:30:34,486 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:34,487 - INFO - Processing sub-query: How to dispute a duplicate transaction?
+2025-06-14 16:30:34,791 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:38,823 - INFO - Progress saved to inference_output.csv (80/108 complete)
+2025-06-14 16:30:38,823 - INFO - Processing question 81/108: Can I deposit a post-dated cheque and when will it...
+2025-06-14 16:30:39,400 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:39,401 - INFO - Processing sub-query: Can I deposit a post-dated cheque?
+2025-06-14 16:30:39,677 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:39,678 - INFO - Processing sub-query: When will it be processed?
+2025-06-14 16:30:39,934 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:42,174 - INFO - Processing question 82/108: How do I change my username for net banking and is...
+2025-06-14 16:30:42,885 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:42,886 - INFO - Processing sub-query: How do I change my username for net banking?
+2025-06-14 16:30:43,189 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:43,190 - INFO - Processing sub-query: Is my username different from my customer ID?
+2025-06-14 16:30:44,114 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:48,400 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:48,400 - INFO - Processing sub-query: How can I avoid TDS deduction on my FD?
+2025-06-14 16:30:48,718 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:48,720 - INFO - Processing sub-query: Can I submit Form 15G online?
+2025-06-14 16:30:48,998 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:51,916 - INFO - Processing question 84/108: I've changed jobs and want to transfer my salary a...
+2025-06-14 16:30:52,616 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:30:52,616 - INFO - Processing sub-query: What's the process for transferring my salary account?
+2025-06-14 16:30:52,919 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:52,921 - INFO - Processing sub-query: Will I lose benefits by transferring my salary account?
+2025-06-14 16:30:53,229 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:56,754 - INFO - Processing question 85/108: Why is my account automatically debited for insura...
+2025-06-14 16:30:57,629 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:30:57,630 - INFO - Processing sub-query: Why was my account debited?
+2025-06-14 16:30:57,936 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:57,938 - INFO - Processing sub-query: What insurance premium was debited?
+2025-06-14 16:30:58,242 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:30:58,243 - INFO - Processing sub-query: Did I sign up for this insurance?
+2025-06-14 16:30:58,550 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:03,055 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:03,056 - INFO - Processing sub-query: International money transfer charges to Australia
+2025-06-14 16:31:03,365 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:03,366 - INFO - Processing sub-query: Documents required for international money transfer to Australia
+2025-06-14 16:31:03,779 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:07,642 - INFO - Processing question 87/108: How do I set up transaction alerts and do you char...
+2025-06-14 16:31:08,279 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:08,280 - INFO - Processing sub-query: How do I set up transaction alerts?
+2025-06-14 16:31:08,584 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:08,586 - INFO - Processing sub-query: Do you charge for SMS notifications?
+2025-06-14 16:31:08,891 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:12,724 - INFO - Processing question 88/108: Can I open a PPF account through your bank and wha...
+2025-06-14 16:31:14,216 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:14,217 - INFO - Processing sub-query: Can I open a PPF account through your bank?
+2025-06-14 16:31:15,138 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:15,140 - INFO - Processing sub-query: What's the current interest rate?
+2025-06-14 16:31:15,551 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:19,747 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:31:19,747 - INFO - Processing sub-query: Can I download an online statement instead?
+2025-06-14 16:31:20,258 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:24,223 - INFO - Processing question 90/108: I need to close my account as I'm relocating but a...
+2025-06-14 16:31:24,867 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:24,868 - INFO - Processing sub-query: What is the process for closing my account?
+2025-06-14 16:31:25,173 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:25,174 - INFO - Processing sub-query: What is the process for transferring my loan to another branch?
+2025-06-14 16:31:25,584 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:28,969 - INFO - Progress saved to inference_output.csv (90/108 complete)
+2025-06-14 16:31:28,970 - INFO - Processing question 91/108: What are the benefits of digital banking and is it...
+2025-06-14 16:31:29,577 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:29,577 - INFO - Processing sub-query: What are the benefits of digital banking?
+2025-06-14 16:31:29,884 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:29,886 - INFO - Processing sub-query: Is digital banking completely safe?
+2025-06-14 16:31:30,297 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:34,803 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:31:34,803 - INFO - Processing sub-query: Which transactions require the second holder's permission in a joint account?
+2025-06-14 16:31:35,107 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:38,541 - INFO - Processing question 93/108: Can I get a virtual debit card for online transact...
+2025-06-14 16:31:39,210 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:39,214 - INFO - Processing sub-query: Can I get a virtual debit card?
+2025-06-14 16:31:39,514 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:39,515 - INFO - Processing sub-query: How is a virtual debit card different from a physical card?
+2025-06-14 16:31:39,819 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:42,321 - INFO - Processing question 94/108: How do I register for internet banking if I've los...
+2025-06-14 16:31:43,031 - INFO - Extracted 3 sub-queries from user question
+2025-06-14 16:31:43,032 - INFO - Processing sub-query: How do I recover my customer ID?
+2025-06-14 16:31:43,400 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:43,402 - INFO - Processing sub-query: How do I reset my password?
+2025-06-14 16:31:43,813 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:43,814 - INFO - Processing sub-query: How do I register for internet banking after recovering my ID and password?
+2025-06-14 16:31:44,226 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:49,037 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:49,038 - INFO - Processing sub-query: How to link my account to both Google Pay and PhonePe?
+2025-06-14 16:31:49,445 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:49,446 - INFO - Processing sub-query: Is it safe?
+2025-06-14 16:31:49,762 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:53,856 - INFO - Processing question 96/108: Why does your app show different balance than the ...
+2025-06-14 16:31:54,460 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:31:54,461 - INFO - Processing sub-query: Why is the app balance different from the SMS balance?
+2025-06-14 16:31:54,767 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:57,855 - INFO - Processing question 97/108: I need to transfer large amount for property purch...
+2025-06-14 16:31:58,471 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:31:58,471 - INFO - Processing sub-query: Safest way to transfer a large amount of money
+2025-06-14 16:31:58,761 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:31:58,763 - INFO - Processing sub-query: Documentation required for property purchase money transfer
+2025-06-14 16:31:59,067 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:03,489 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:03,490 - INFO - Processing sub-query: Why is my international payment declining?
+2025-06-14 16:32:03,884 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:03,885 - INFO - Processing sub-query: What could be the issue if my international transactions are enabled on my card?
+2025-06-14 16:32:04,290 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:08,856 - INFO - Processing question 99/108: How do I update my PAN card details and will it af...
+2025-06-14 16:32:09,634 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:09,634 - INFO - Processing sub-query: How do I update my PAN card details?
+2025-06-14 16:32:10,643 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:10,645 - INFO - Processing sub-query: Will updating my PAN card affect my existing investments?
+2025-06-14 16:32:10,954 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:14,603 - INFO - Processing question 100/108: Can I get home loan and car loan simultaneously an...
+2025-06-14 16:32:15,556 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:15,556 - INFO - Processing sub-query: Can I get a home loan and car loan simultaneously?
+2025-06-14 16:32:15,964 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:15,966 - INFO - Processing sub-query: How will getting both loans affect my eligibility?
+2025-06-14 16:32:16,378 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:20,677 - INFO - Progress saved to inference_output.csv (100/108 complete)
+2025-06-14 16:32:21,394 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:32:21,394 - INFO - Processing sub-query: Is it necessary to link my loan account and savings account for EMI payments?
+2025-06-14 16:32:22,415 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:26,178 - INFO - Processing question 102/108: I'm facing issues with OTP delivery for net bankin...
+2025-06-14 16:32:26,821 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:32:26,822 - INFO - Processing sub-query: How to resolve OTP delivery issues for net banking transactions?
+2025-06-14 16:32:27,110 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:30,900 - INFO - Processing question 103/108: What happens if I withdraw cash abroad using my de...
+2025-06-14 16:32:31,632 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:31,633 - INFO - Processing sub-query: What happens if I withdraw cash abroad using my debit card?
+2025-06-14 16:32:32,044 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:32,046 - INFO - Processing sub-query: What are the charges for withdrawing cash abroad using my debit card?
+2025-06-14 16:32:32,404 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:36,038 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:32:36,039 - INFO - Processing sub-query: Step-by-step solution to reset online banking password and regain login access
+2025-06-14 16:32:36,446 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:40,207 - INFO - Processing question 105/108: I need to change my nominee for all my accounts an...
+2025-06-14 16:32:40,813 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:40,814 - INFO - Processing sub-query: Can I change my nominee online?
+2025-06-14 16:32:41,139 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:41,140 - INFO - Processing sub-query: How do I change my nominee for all my accounts and deposits?
+2025-06-14 16:32:41,465 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:45,439 - INFO - Processing question 106/108: My account shows insufficient funds but I just dep...
+2025-06-14 16:32:46,051 - INFO - Extracted 1 sub-queries from user question
+2025-06-14 16:32:46,052 - INFO - Processing sub-query: Why isn't my recent deposit reflected in my account balance?
+2025-06-14 16:32:46,484 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:50,886 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:50,887 - INFO - Processing sub-query: Which current account is best for our family business?
+2025-06-14 16:32:51,294 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:51,297 - INFO - Processing sub-query: What are the charges?
+2025-06-14 16:32:51,706 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:54,473 - INFO - Processing question 108/108: How do I enable international transactions on my c...
+2025-06-14 16:32:55,185 - INFO - Extracted 2 sub-queries from user question
+2025-06-14 16:32:55,185 - INFO - Processing sub-query: How do I enable international transactions on my card?
+2025-06-14 16:32:55,593 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:32:55,595 - INFO - Processing sub-query: How do I increase my transaction limit?
+2025-06-14 16:32:56,007 - INFO - HTTP Request: POST https://69e70495-9868-4a4e-bb21-9aad53f3d255.us-west-1-0.aws.cloud.qdrant.io:6333/collections/Lenden_%20faqs/points/search "HTTP/1.1 200 OK"
+2025-06-14 16:33:00,114 - INFO - Progress saved to inference_output.csv (108/108 complete)
+2025-06-14 16:33:00,122 - INFO - Average time per query: 5.03 seconds
+2025-06-14 16:33:00,123 - INFO - Responses saved to: inference_output.csv
