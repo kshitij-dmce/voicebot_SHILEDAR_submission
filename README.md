@@ -22,7 +22,7 @@ In 2024, India's P2P lending sector surpassed ₹16,000 crore in disbursements, 
 
 ## System Architecture
 
-![VoxGenie System Architecture](./screenshots/Conversational Intelligence.png)
+![VoxGenie System Architecture](./screenshots/System_Architecture.png)
 
 ## Environment Setup
 
